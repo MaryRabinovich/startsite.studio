@@ -1,0 +1,33 @@
+body {
+  background: #222;
+  overflow: hidden;
+}
+
+.bubble {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 100px;
+  top: 100px;
+}
+.bubble-small {
+  background: orange;
+  width: 6px;
+  height: 6px;
+}
+.bubble-small-contacting {
+  width: 15px;
+  height: 15px;
+  opacity: 0.2;
+}
+.bubble-big {
+  border: 1px solid orange;
+  width: 25px;
+  height: 25px;
+}
+.bubble-big-contacting {
+  opacity: 0.5;
+}

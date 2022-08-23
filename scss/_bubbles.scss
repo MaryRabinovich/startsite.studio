@@ -1,0 +1,31 @@
+.bubble {
+    pointer-events: none;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    left: 100px;
+    top: 100px;
+
+    &-small {
+        background: $color-1;
+        width: 6px;
+        height: 6px;
+
+        &-contacting {
+            width: 15px;
+            height: 15px;
+            opacity: 0.2;
+        }
+    }
+
+    &-big {
+        border: 1px solid $color-1;
+        width: 25px;
+        height: 25px;
+
+        &-contacting {
+            opacity: 0.5;
+        }
+    }
+}
