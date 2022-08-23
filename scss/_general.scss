@@ -1,4 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: $color-dark;
     overflow: hidden;
+}
+
+header {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid $color-medium;
+}
+
+#original {
+    padding: 1rem;
+    color: $color-light;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-1;
+    }
 }

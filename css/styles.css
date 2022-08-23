@@ -1,6 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #222;
   overflow: hidden;
+}
+
+header {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #555;
+}
+
+#original {
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+#original:hover {
+  color: orange;
 }
 
 .bubble {
@@ -17,14 +39,14 @@ body {
   height: 6px;
 }
 .bubble-small-contacting {
-  width: 15px;
-  height: 15px;
-  opacity: 0.2;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
 }
 .bubble-big {
   border: 1px solid orange;
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
 }
 .bubble-big-contacting {
   opacity: 0.5;

@@ -10,3 +10,7 @@ pointerMoveEventsNotifier.start()
 screenTicksNotifier.attach(smallBubble)
 screenTicksNotifier.attach(bigBubble)
 screenTicksNotifier.start()
+
+const original = document.getElementById('original')
+smallBubble.addContactingBehaviour(original)
+bigBubble.addContactingBehaviour(original)

@@ -16,11 +16,24 @@ const bubbleFactory = {
             view.moveTo(archive.getX(), archive.getY())
         }
 
+        function addContactingBehaviour(contacted) {
+            const contactingClass = config.bubbles[bubbleType].contactingClass
+
+            contacted.addEventListener('pointerover', function () {
+                view.classList.add(contactingClass)
+            })
+            
+            contacted.addEventListener('pointerout', function () {
+                view.classList.remove(contactingClass)
+            })
+        }
+
         return {
             view,
             archive,
             updateWithPointerMoveEvent,
-            updateWithScreenTicks
+            updateWithScreenTicks,
+            addContactingBehaviour
         }
     }
 }

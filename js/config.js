@@ -3,11 +3,13 @@ const config = {
         screenTick: 20,
         small: {
             additionalClassName: 'bubble-small',
-            elegance: 30,
+            contactingClass: 'bubble-small-contacting',
+            elegance: 20,
         },
         big: {
             additionalClassName: 'bubble-big',
-            elegance: 20,
+            contactingClass: 'bubble-big-contacting',
+            elegance: 30,
         },
         startPosition: {
             x: 100,
