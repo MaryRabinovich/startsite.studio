@@ -57,3 +57,71 @@ p {
 .bubble-big-contacting {
   opacity: 0.5;
 }
+
+.printer {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  min-height: 3rem;
+}
+.printer #printer {
+  text-decoration: none;
+}
+.printer #printer:before {
+  content: "> ";
+  color: #555;
+}
+.printer__blink {
+  font-weight: bold;
+  padding: 0;
+  -webkit-animation: blink 0.8s step-end infinite;
+          animation: blink 0.8s step-end infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    color: #555;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: transparent;
+  }
+}
+@keyframes blink {
+  0% {
+    color: #555;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: transparent;
+  }
+}
+.printer__phrase-1 {
+  color: orange;
+}
+.printer__phrase-2 {
+  color: magenta;
+}
+.printer__phrase-3 {
+  color: green;
+}
+.printer__phrase-4 {
+  color: white;
+}
+.printer__phrase-hover-1:hover {
+  color: orange;
+}
+.printer__phrase-hover-2:hover {
+  color: magenta;
+}
+.printer__phrase-hover-3:hover {
+  color: green;
+}
+.printer__phrase-hover-4:hover {
+  color: white;
+}

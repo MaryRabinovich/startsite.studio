@@ -1,5 +1,3 @@
-const app = document.getElementById('app')
-
 const smallBubble = bubbleFactory.create('small')
 const bigBubble = bubbleFactory.create('big')
 

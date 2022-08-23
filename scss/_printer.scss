@@ -1,0 +1,38 @@
+.printer {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    min-height: 3rem;
+
+    #printer { 
+        text-decoration: none; 
+
+        &:before {
+            content: '> ';
+            color: $color-medium;
+        }
+    }
+
+    &__blink {
+        font-weight: bold;
+        padding: 0;
+        animation: blink 0.8s step-end infinite;
+    }
+    @keyframes blink {
+        0% { color: $color-medium; }
+        50% { color: transparent; }
+        100% { color: transparent; }
+    }
+    
+    &__phrase-1 { color: $color-1; }
+    &__phrase-2 { color: $color-2; }
+    &__phrase-3 { color: $color-3; }
+    &__phrase-4 { color: $color-4; }
+    
+    &__phrase-hover-1:hover { color: $color-1; }
+    &__phrase-hover-2:hover { color: $color-2; }
+    &__phrase-hover-3:hover { color: $color-3; }
+    &__phrase-hover-4:hover { color: $color-4; }
+}
