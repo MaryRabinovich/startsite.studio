@@ -1,5 +1,13 @@
 const app = document.getElementById('app')
 
 const bubbles = []
-bubbles.push(bubbleFactory.create('bubble-small'))
-bubbles.push(bubbleFactory.create('bubble-big'))
+
+const smallBubble = bubbleFactory.create('small')
+const bigBubble = bubbleFactory.create('big')
+
+pointerMoveEventsNotifier.attach(smallBubble)
+pointerMoveEventsNotifier.attach(bigBubble)
+
+onmousemove = function (event) {
+    pointerMoveEventsNotifier.notify(event)
+}

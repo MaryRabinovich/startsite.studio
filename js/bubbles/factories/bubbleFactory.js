@@ -1,13 +1,20 @@
 const bubbleFactory = {
-
-    create(additionalClassName) {
     
-        const view = document.createElement('div')
-        app.appendChild(view)
+    create(bubbleType) {
 
-        view.className = 'bubble'
-        view.classList.add(additionalClassName)
+        const view = viewFactory.create(bubbleType)
+
+        const archive = archiveFactory.create(bubbleType)
         
-        return view
+        function updateWithPointerMoveEvent(event) {
+            archive.save(event.clientX, event.clientY)
+            view.moveTo(archive.getX(), archive.getY())
+        }
+
+        return {
+            view,
+            archive,
+            updateWithPointerMoveEvent
+        }
     }
 }
