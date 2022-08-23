@@ -25,6 +25,12 @@ header {
   color: orange;
 }
 
+p {
+  padding: 1rem 1rem 0 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
 .bubble {
   pointer-events: none;
   position: absolute;
