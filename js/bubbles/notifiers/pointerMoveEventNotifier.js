@@ -10,5 +10,13 @@ const pointerMoveEventsNotifier = {
         this.observers.forEach(
             observer => observer.updateWithPointerMoveEvent(event)
         )
+    },
+
+    start() {
+        const notifier = this
+
+        onpointermove = function (event) {
+            notifier.notify(event)
+        }
     }
 }

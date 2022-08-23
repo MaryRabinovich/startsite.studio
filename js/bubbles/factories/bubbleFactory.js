@@ -10,11 +10,17 @@ const bubbleFactory = {
             archive.save(event.clientX, event.clientY)
             view.moveTo(archive.getX(), archive.getY())
         }
+        
+        function updateWithScreenTicks() {
+            archive.homogenize()
+            view.moveTo(archive.getX(), archive.getY())
+        }
 
         return {
             view,
             archive,
-            updateWithPointerMoveEvent
+            updateWithPointerMoveEvent,
+            updateWithScreenTicks
         }
     }
 }
